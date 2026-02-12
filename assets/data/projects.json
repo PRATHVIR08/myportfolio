@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "A fully-featured e-commerce solution with payment integration, inventory management, and real-time notifications.",
+    "category": "Web Application",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+    "imageUrl": "assets/images/projects/ecommerce.jpg",
+    "projectUrl": "https://example.com/ecommerce",
+    "githubUrl": "https://github.com/prathvir/ecommerce",
+    "featured": true,
+    "date": "2023-06-15",
+    "testimonial": "Increased sales by 60% in first 6 months"
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "Collaborative task management tool with real-time synchronization, team features, and advanced analytics.",
+    "category": "Web Application",
+    "technologies": ["Vue.js", "Firebase", "Tailwind CSS"],
+    "imageUrl": "assets/images/projects/taskapp.jpg",
+    "projectUrl": "https://example.com/taskapp",
+    "githubUrl": "https://github.com/prathvir/taskapp",
+    "featured": true,
+    "date": "2023-04-20"
+  },
+  {
+    "id": 3,
+    "title": "Social Media Dashboard",
+    "description": "Analytics dashboard for managing multiple social media accounts with real-time metrics and insights.",
+    "category": "Dashboard",
+    "technologies": ["React", "Express", "PostgreSQL"],
+    "imageUrl": "assets/images/projects/socialdash.jpg",
+    "projectUrl": "https://example.com/socialdash",
+    "githubUrl": "https://github.com/prathvir/socialdash",
+    "date": "2023-03-10"
+  },
+  {
+    "id": 4,
+    "title": "Learning Platform",
+    "description": "Online learning platform with video courses, progress tracking, certificates, and interactive quizzes.",
+    "category": "EdTech",
+    "technologies": ["Next.js", "Stripe", "MySQL"],
+    "imageUrl": "assets/images/projects/learning.jpg",
+    "projectUrl": "https://example.com/learning",
+    "githubUrl": "https://github.com/prathvir/learning",
+    "date": "2023-02-05"
+  },
+  {
+    "id": 5,
+    "title": "Weather Application",
+    "description": "Modern weather application with real-time data, forecasts, and beautiful animations for weather visualization.",
+    "category": "Web Application",
+    "technologies": ["React", "Weather API", "CSS3"],
+    "imageUrl": "assets/images/projects/weather.jpg",
+    "projectUrl": "https://example.com/weather",
+    "githubUrl": "https://github.com/prathvir/weather",
+    "date": "2022-12-20"
+  },
+  {
+    "id": 6,
+    "title": "Restaurant Booking System",
+    "description": "Restaurant management and booking system with reservation tracking, menu management, and customer reviews.",
+    "category": "Web Application",
+    "technologies": ["Vue.js", "Django", "SQLite"],
+    "imageUrl": "assets/images/projects/restaurant.jpg",
+    "projectUrl": "https://example.com/restaurant",
+    "githubUrl": "https://github.com/prathvir/restaurant",
+    "date": "2022-11-15"
+  },
+  {
+    "id": 7,
+    "title": "Portfolio Website",
+    "description": "A minimalistic, professional portfolio website with smooth scrolling animations and modern design.",
+    "category": "Website",
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "imageUrl": "assets/images/projects/portfolio.jpg",
+    "projectUrl": "https://example.com/portfolio",
+    "githubUrl": "https://github.com/prathvir/portfolio",
+    "date": "2022-10-01"
+  },
+  {
+    "id": 8,
+    "title": "Fitness Tracker App",
+    "description": "Mobile-friendly fitness tracking application with workout logging, progress charts, and nutrition tracking.",
+    "category": "Health & Wellness",
+    "technologies": ["React Native", "Firebase", "Chart.js"],
+    "imageUrl": "assets/images/projects/fitness.jpg",
+    "projectUrl": "https://example.com/fitness",
+    "githubUrl": "https://github.com/prathvir/fitness",
+    "date": "2022-09-10"
+  }
+]

@@ -1,0 +1,95 @@
+/* ==================== THEME TOGGLE STYLES ==================== */
+
+:root {
+    color-scheme: light dark;
+}
+
+/* Light theme (default) */
+body {
+    --transition-duration: 0.3s;
+}
+
+/* Smooth transitions for theme changes */
+body,
+body * {
+    transition: background-color var(--transition-duration), 
+                color var(--transition-duration),
+                border-color var(--transition-duration) !important;
+}
+
+/* Avoid transitions on page load */
+body.loading * {
+    transition: none !important;
+}
+
+/* Theme toggle button styles */
+#themeToggle {
+    padding: 8px 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+}
+
+#themeToggle:hover {
+    background-color: var(--secondary);
+}
+
+/* Dark theme enhancements */
+[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+[data-theme="dark"] .card {
+    background-color: #2a2a2a;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+    background-color: #2a2a2a;
+    border-color: #444;
+}
+
+[data-theme="dark"] input:focus,
+[data-theme="dark"] textarea:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(102, 179, 255, 0.2);
+}
+
+/* Scrollbar styling for dark theme */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 12px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 6px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Light theme scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}

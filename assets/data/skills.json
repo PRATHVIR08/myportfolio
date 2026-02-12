@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "category": "Frontend",
+    "name": "React",
+    "level": "Expert",
+    "proficiency": 95
+  },
+  {
+    "id": 2,
+    "category": "Frontend",
+    "name": "Vue.js",
+    "level": "Advanced",
+    "proficiency": 85
+  },
+  {
+    "id": 3,
+    "category": "Frontend",
+    "name": "TypeScript",
+    "level": "Advanced",
+    "proficiency": 88
+  },
+  {
+    "id": 4,
+    "category": "Frontend",
+    "name": "Tailwind CSS",
+    "level": "Expert",
+    "proficiency": 92
+  },
+  {
+    "id": 5,
+    "category": "Backend",
+    "name": "Node.js",
+    "level": "Expert",
+    "proficiency": 93
+  },
+  {
+    "id": 6,
+    "category": "Backend",
+    "name": "Express",
+    "level": "Advanced",
+    "proficiency": 90
+  },
+  {
+    "id": 7,
+    "category": "Backend",
+    "name": "Python",
+    "level": "Advanced",
+    "proficiency": 87
+  },
+  {
+    "id": 8,
+    "category": "Database",
+    "name": "MongoDB",
+    "level": "Advanced",
+    "proficiency": 88
+  },
+  {
+    "id": 9,
+    "category": "Database",
+    "name": "PostgreSQL",
+    "level": "Advanced",
+    "proficiency": 86
+  },
+  {
+    "id": 10,
+    "category": "DevOps",
+    "name": "Docker",
+    "level": "Intermediate",
+    "proficiency": 75
+  },
+  {
+    "id": 11,
+    "category": "DevOps",
+    "name": "AWS",
+    "level": "Intermediate",
+    "proficiency": 78
+  },
+  {
+    "id": 12,
+    "category": "Tools",
+    "name": "Git",
+    "level": "Expert",
+    "proficiency": 95
+  }
+]

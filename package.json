@@ -1,0 +1,31 @@
+{
+  "name": "prathvir-portfolio",
+  "version": "1.0.0",
+  "description": "A professional portfolio website with smooth scrolling animations and minimalistic design",
+  "main": "assets/js/main.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Portfolio is a static site - no build needed'",
+    "test": "echo 'Add tests here'"
+  },
+  "keywords": [
+    "portfolio",
+    "web developer",
+    "full-stack",
+    "responsive design",
+    "animations"
+  ],
+  "author": "Prathvir",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prathvir/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prathvir/portfolio/issues"
+  },
+  "homepage": "https://prathvir.com",
+  "devDependencies": {},
+  "dependencies": {}
+}
