@@ -2,23 +2,26 @@
 :root {
     --primary: #1a1a1a;
     --secondary: #2d2d2d;
-    --accent: #0066cc;
-    --light: #f5f5f5;
+    --accent: #381932;
+    --light: #fff3e6;
     --text: #333;
     --text-light: #666;
     --border: #e0e0e0;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --button1:#fde7d1;
+
 }
 
 [data-theme="dark"] {
     --primary: #f5f5f5;
     --secondary: #e8e8e8;
-    --accent: #66b3ff;
+    --accent: #3e5368;
     --light: #1a1a1a;
     --text: #f5f5f5;
     --text-light: #b0b0b0;
     --border: #333;
+    --button1:black
 }
 
 /* ==================== GLOBAL STYLES ==================== */
@@ -322,7 +325,7 @@ section {
 }
 
 .skill-category {
-    background-color: var(--primary);
+    background-color: var(--button1);
     padding: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border);
@@ -344,8 +347,8 @@ section {
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
-    border: 1px solid var(--accent);
-    color: var(--accent);
+    border: 1px solid var(--border);
+    color: var(--button1);
 }
 
 /* ==================== PROJECTS SECTION ==================== */
@@ -505,8 +508,8 @@ textarea {
 
 /* ==================== FOOTER ==================== */
 footer {
-    background-color: var(--primary);
-    color: var(--text);
+    background-color: var(--accent);
+    color: var(--button1);
     padding: 3rem 5%;
     border-top: 1px solid var(--border);
 }
@@ -522,7 +525,7 @@ footer {
 
 .footer-section h4 {
     margin-bottom: 1rem;
-    color: var(--accent);
+    color: var(--button1);
 }
 
 .footer-section ul {
@@ -534,7 +537,7 @@ footer {
 }
 
 .footer-section a {
-    color: var(--text-light);
+    color: var(--button1);
     transition: color 0.3s;
 }
 
