@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.innerHTML = data;
             setupNavbar();
             setupThemeToggle();
+            setupColorPalette();
         });
 
     // Fetch and insert footer
@@ -48,24 +49,59 @@ function setupThemeToggle() {
     const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
     
-    // Check for saved theme or default to light
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    // Check for saved theme or default to dark
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     html.setAttribute('data-theme', savedTheme);
     updateThemeToggleIcon(savedTheme);
 
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeToggleIcon(newTheme);
-    });
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeToggleIcon(newTheme);
+        });
+    }
 }
 
 function updateThemeToggleIcon(theme) {
     const themeToggle = document.getElementById('themeToggle');
-    themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
+    if (themeToggle) {
+        themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+}
+
+// ==================== COLOR PALETTE SWITCHER ====================
+function setupColorPalette() {
+    const html = document.documentElement;
+    const dots = document.querySelectorAll('.color-dot');
+    
+    // Check for saved color theme or default to indigo
+    const savedColor = localStorage.getItem('color-theme') || 'indigo';
+    html.setAttribute('data-color-theme', savedColor);
+    updateActiveDot(savedColor);
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const color = dot.getAttribute('data-color');
+            html.setAttribute('data-color-theme', color);
+            localStorage.setItem('color-theme', color);
+            updateActiveDot(color);
+        });
+    });
+}
+
+function updateActiveDot(color) {
+    const dots = document.querySelectorAll('.color-dot');
+    dots.forEach(dot => {
+        if (dot.getAttribute('data-color') === color) {
+            dot.classList.add('active');
+        } else {
+            dot.classList.remove('active');
+        }
+    });
 }
 
 // ==================== SCROLL ANIMATIONS ====================
@@ -206,10 +242,3 @@ if ('IntersectionObserver' in window) {
 }
 
 console.log('Portfolio initialized successfully!');
-// Load Navbar Component
-fetch("components/navbar.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("navbar").innerHTML = data;
-    })
-    .catch(error => console.log("Navbar loading error:", error));

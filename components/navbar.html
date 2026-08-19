@@ -1,16 +1,23 @@
 <nav class="navbar">
     <div class="logo">
-       <!-- <img src="assets/images/icons/logo.svg" alt="Logo">-->
-        <span> R S PRATHVIR</span>
+        <span>R S PRATHVIR</span>
     </div>
 
     <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <button id="themeToggle">🌙</button>
+    <div class="theme-controls">
+        <div class="color-palette-switcher" id="colorPalette">
+            <button class="color-dot indigo" data-color="indigo" title="Royal Indigo Theme"></button>
+            <button class="color-dot emerald" data-color="emerald" title="Emerald Green Theme"></button>
+            <button class="color-dot violet" data-color="violet" title="Cyber Violet Theme"></button>
+            <button class="color-dot amber" data-color="amber" title="Sunset Amber Theme"></button>
+        </div>
+        <button id="themeToggle" title="Toggle Light/Dark Mode">🌙</button>
+    </div>
 </nav>
