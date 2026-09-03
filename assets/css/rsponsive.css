@@ -159,8 +159,8 @@
         padding: 1.5rem;
     }
 
-    .project-image {
-        height: 150px;
+    .project-card .project-image {
+        height: 180px;
     }
 
     .footer-content {

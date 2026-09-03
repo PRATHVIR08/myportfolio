@@ -460,14 +460,16 @@ section {
     box-shadow: var(--shadow-lg);
 }
 
-.project-image {
+.project-card .project-image {
     width: 100%;
-    height: 200px;
+    height: 240px;
     background: linear-gradient(135deg, var(--accent), var(--secondary));
     overflow: hidden;
+    display: block;
+    object-fit: cover;
 }
 
-.project-image img {
+.project-card .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
